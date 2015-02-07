@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "chai-jq": "0.0.8",
+    "jsdom": "^0.10.5",
+    "mocha": "^2.1.0",
+    "sinon": "^1.12.2",
+    "chai": "^1.10.0",
+    "sinon-chai": "^2.6.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "backbone.marionette": "^2.3.2",
+    "underscore": "^1.7.0"
+  }
+}
