@@ -1,5 +1,3 @@
-## [View the new docs](http://marionettejs.com/docs/marionette.module.html)
-
 # Marionette.Module
 
 Marionette Modules allow you to create modular encapsulated logic.
@@ -473,20 +471,6 @@ mod.on("stop", function(){
 
 ### Module Initializers
 
-> Warning: deprecated
->
-> This feature is deprecated, and is scheduled to be removed in version 3 of Marionette. Instead
-> of Initializers, you should use events to manage start-up logic. The `start` event is an ideal
-> substitute for Initializers.
->
-> If you were relying on the deferred nature of Initializers in your app, you should instead
-> use Promises. This might look something like the following:
->
-> ```js
-> doAsyncThings().then(myModule.start);
-> ```
->
-
 Modules, like `Application` objects, can be configured to have initializers. And just like
 an Application's initializers, module's initializers are run anytime that
 the module is started. Further, there is no limit to the number of initializers it can have.
@@ -509,19 +493,6 @@ MyApp.module("Foo", function(Foo){
 
 ### Module Finalizers
 
-> Warning: deprecated
->
-> This feature is deprecated, and is scheduled to be removed in version 3 of Marionette. Instead
-> of Finalizers, you should use events to manage start-up logic. The `stop` event is an ideal
-> substitute for Finalizers.
->
-> If you were relying on the deferred nature of Initializers in your app, you should instead
-> use Promises. This might look something like the following:
->
-> ```js
-> doAsyncThings().then(myModule.stop);
-> ```
->
 Modules also have finalizers that work in an opposite manner to
 initializers: they are called whenever a module is stopped via the `stop` method.
 You can have as many finalizers as you'd like.
