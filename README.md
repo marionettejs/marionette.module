@@ -6,7 +6,6 @@
 #### TODO
 
 * add a build system
-* add tests around the shim
 * release to npm
 
 ------------
