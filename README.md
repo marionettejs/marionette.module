@@ -5,7 +5,6 @@
 
 #### TODO
 
-* add a build system
 * release to npm
 
 ------------

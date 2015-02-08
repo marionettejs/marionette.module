@@ -1,5 +1,5 @@
-var _ = require('underscore'),
-Backbone = require('backbone');
+var _ = (window && window._) || require('underscore'),
+Backbone = (window && window.Backbone) || require('backbone');
 
 // Callbacks
 // ---------
