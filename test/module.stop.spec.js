@@ -17,7 +17,7 @@ Marionette.Deferred = require('JQDeferred');
 Shim = require('../src/shim');
 
 Module = require('../src/module');
-Shim(Marionette.Application);
+Shim(Marionette);
 
 describe('module stop', function() {
   'use strict';

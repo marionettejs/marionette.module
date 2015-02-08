@@ -13,5 +13,5 @@ module.exports = function(Mn) {
     return ModuleClass.create.apply(ModuleClass, args);
   }
 
-  return obj;
+  return Mn;
 }
