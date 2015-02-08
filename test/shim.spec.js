@@ -1,3 +1,5 @@
+global.window = null;
+
 var shim = require('../src');
 var chai  = require('chai');
 expect = chai.expect;

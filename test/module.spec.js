@@ -1,3 +1,5 @@
+global.window = null;
+
 var sinon = require('sinon');
 var sinonChai = require('sinon-chai');
 var chaiJq = require('chai-jq');
