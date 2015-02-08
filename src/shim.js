@@ -1,8 +1,8 @@
 var Module = require('./module'),
 _ = require('underscore');
 
-module.exports = function(obj) {
-  obj.prototype.module = function(moduleNames, moduleDefinition) {
+module.exports = function(Mn) {
+  Mn.Application.prototype.module = function(moduleNames, moduleDefinition) {
     // Overwrite the module class if the user specifies one
     var ModuleClass = Module.getClass(moduleDefinition);
 

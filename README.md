@@ -18,7 +18,7 @@ The (deprecated) Marionette.Module Class as a standalone library.
 In Marionette 1.x and 2.x the `Application` Class has a `module` method. To shim this behavior for v3.x
 
 ```js
-require('marionette.module').shim(Marionette.Application);
+require('marionette.module').shim(Marionette);
 ```
 
 This will add Modules onto the application prototype.
