@@ -5,6 +5,7 @@
 
 #### TODO
 
+* investigate a better solution for the browserify web shim
 * release to npm
 
 ------------
