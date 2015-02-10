@@ -1,5 +1,5 @@
 var Module = require('./module'),
-_ = (window && window._) || require('underscore');
+_ = require('underscore');
 
 module.exports = function(Mn) {
   Mn.Application.prototype.module = function(moduleNames, moduleDefinition) {

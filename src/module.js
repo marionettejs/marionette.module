@@ -1,8 +1,7 @@
-var _ = (window && window._) || require('underscore'),
-Backbone = (window && window.Backbone) || require('backbone'),
+var _ = require('underscore'),
+Backbone = require('backbone'),
 Callbacks = require('./callbacks'),
-Marionette = (window && window.Backbone && window.Backbone.Marionette) || require('backbone.marionette');
-
+Marionette = require('backbone.marionette');
 /* jshint maxparams: 9 */
 
 // Module
