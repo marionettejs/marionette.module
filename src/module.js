@@ -114,6 +114,11 @@ _.extend(Module.prototype, Backbone.Events, {
     if (!definition) { return; }
 
     // build the correct list of arguments for the module definition
+
+    // make flattening consistent
+    // in lodash (v3) it's flatten(collection, deep)
+    // and in underscore it's flatten(collection, shallow)
+    var deepFlag = !_.flattenDeep;
     var args = _.flatten([
       this,
       this.app,
@@ -121,7 +126,7 @@ _.extend(Module.prototype, Backbone.Events, {
       Marionette,
       Backbone.$, _,
       customArgs
-    ]);
+      ], deepFlag);
 
     definition.apply(this, args);
   },

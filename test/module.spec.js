@@ -47,8 +47,13 @@ describe('application modules', function() {
 
       describe('and the define function is provided', function() {
         beforeEach(function() {
-          this.additionalParam = {};
-          this.module = this.app.module('Mod', this.defineSpy, this.additionalParam);
+          this.additionalParam1 = [[1], 2];
+          this.additionalParam2 = {};
+          this.module = this.app.module('Mod',
+            this.defineSpy,
+            this.additionalParam1,
+            this.additionalParam2
+          );
         });
 
         it('it should add module to the app', function() {
@@ -71,7 +76,8 @@ describe('application modules', function() {
             Marionette,
             Backbone.$,
             _,
-            this.additionalParam
+            this.additionalParam1,
+            this.additionalParam2
           );
         });
       });
