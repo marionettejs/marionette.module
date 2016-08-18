@@ -3,10 +3,6 @@
 
 ### This Shim is a Work in Progress ###
 
-#### TODO
-
-* release to npm
-
 ------------
 
 The (deprecated) Marionette.Module Class as a standalone library.

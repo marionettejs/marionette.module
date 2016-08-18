@@ -1,13 +1,19 @@
 {
+  "name": "marionette.module",
+  "description": "The (deprecated) Marionette.Module Class as a standalone library.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/marionettejs/marionette.module",
+  "main": "dist/build.js",
   "devDependencies": {
     "JQDeferred": "^2.1.0",
+    "browserify": "^13.1.0",
     "chai": "^1.10.0",
     "chai-jq": "0.0.8",
+    "jquery": "~2.1.3",
     "jsdom": "^0.10.5",
     "mocha": "^2.1.0",
     "sinon": "^1.12.2",
-    "sinon-chai": "^2.6.0",
-    "jquery": "~2.1.3"
+    "sinon-chai": "^2.6.0"
   },
   "scripts": {
     "test": "mocha",
